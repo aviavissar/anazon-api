@@ -1,0 +1,79 @@
+$notStarted:rgba(255, 0, 0, 0.616);
+$inProgress:greenyellow;
+$done:cornflowerblue;
+$background:#9e9e9e5c;
+
+:export{notStarted:$notStarted; inProgress:$inProgress ;done:$done}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  text-align: center;
+  background: $background;
+  width: 98%;
+  margin: 10px auto;
+}
+
+.App-logo {
+  height: 13vmin;
+  pointer-events: none;
+  img {
+    width: 60%;
+  }
+}
+
+.inProgress {
+  background:$inProgress;
+}
+.done {
+  background: $done;
+}
+.notStarted {
+  background: $notStarted;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+h3{
+  font-weight: bold;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  width: 98%;
+  margin: 10px auto;
+  padding: 32px 15px;
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.displaynone {
+  display: none;
+}
+
+
+.readable{
+  background:transparent;
+  border:none;
+  &:focus{
+   outline: none;
+  
+  }
+}
